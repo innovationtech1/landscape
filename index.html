@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenCare Pro – Servicios de Jardinería a Domicilio</title>
+  <meta name="description" content="GreenCare Pro: Servicios profesionales de jardinería, corte de árboles, diseño de jardines y mantenimiento a domicilio. Solicita tu cotización y agenda tu cita hoy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-icon">🌿</span>
+        <span>GreenCare<strong>Pro</strong></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#cotizacion" class="nav-link">Cotización</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="#agendar" class="nav-cta">Agendar Cita</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <img src="C:\Users\j\.gemini\antigravity-ide\brain\72759f56-adfc-4687-9313-3ba7c78b6f74\garden_hero_1780025068093.png"
+           alt="Jardín profesional bien cuidado" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">✦ Servicio Profesional a Domicilio</div>
+      <h1>Tu jardín merece<br /><span class="accent">lo mejor</span></h1>
+      <p class="hero-sub">Expertos en jardinería, corte de árboles y diseño de espacios verdes. Agendamos a tu conveniencia, directamente en tu hogar.</p>
+      <div class="hero-actions">
+        <a href="#agendar" class="btn-primary" id="hero-cta-agendar">Agendar Cita</a>
+        <a href="#cotizacion" class="btn-outline" id="hero-cta-cotizacion">Ver Cotización</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">+500</span><span class="stat-label">Clientes felices</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Años de experiencia</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Calificación</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section id="servicios" class="section services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lo que hacemos</span>
+        <h2 class="section-title">Nuestros <span class="accent">Servicios</span></h2>
+        <p class="section-sub">Ofrecemos soluciones completas para mantener y embellecer tu jardín</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" id="svc-corte-jardin">
+          <div class="service-img-wrap">
+            <img src="C:\Users\j\.gemini\antigravity-ide\brain\72759f56-adfc-4687-9313-3ba7c78b6f74\lawn_mowing_service_1780025100945.png"
+                 alt="Corte de jardín profesional" />
+            <div class="service-badge">Más Popular</div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon">🌿</div>
+            <h3>Corte de Jardín</h3>
+            <p>Corte preciso de césped con maquinaria profesional. Dejamos tu jardín impecable y con acabado perfecto.</p>
+            <ul class="service-features">
+              <li>✓ Corte de césped nivelado</li>
+              <li>✓ Recorte de bordes</li>
+              <li>✓ Limpieza de residuos</li>
+              <li>✓ Soplado de áreas</li>
+            </ul>
+            <div class="service-price">Desde <strong>$299 MXN</strong></div>
+            <button class="btn-service" onclick="abrirAgendar('Corte de Jardín')" id="btn-corte-jardin">Contratar</button>
+          </div>
+        </div>
+
+        <div class="service-card featured" id="svc-corte-arboles">
+          <div class="service-img-wrap">
+            <img src="C:\Users\j\.gemini\antigravity-ide\brain\72759f56-adfc-4687-9313-3ba7c78b6f74\tree_cutting_service_1780025088369.png"
+                 alt="Corte y poda de árboles" />
+            <div class="service-badge">Recomendado</div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon">🌳</div>
+            <h3>Corte de Árboles</h3>
+            <p>Poda y corte profesional de árboles con equipos de seguridad certificados. Talamos o podamos según necesites.</p>
+            <ul class="service-features">
+              <li>✓ Poda de formación</li>
+              <li>✓ Tala controlada</li>
+              <li>✓ Retiro de ramas</li>
+              <li>✓ Tratamiento de tocones</li>
+            </ul>
+            <div class="service-price">Desde <strong>$899 MXN</strong></div>
+            <button class="btn-service" onclick="abrirAgendar('Corte de Árboles')" id="btn-corte-arboles">Contratar</button>
+          </div>
+        </div>
+
+        <div class="service-card" id="svc-diseno">
+          <div class="service-img-wrap">
+            <img src="C:\Users\j\.gemini\antigravity-ide\brain\72759f56-adfc-4687-9313-3ba7c78b6f74\garden_design_service_1780025117520.png"
+                 alt="Diseño de jardín" />
+          </div>
+          <div class="service-body">
+            <div class="service-icon">🎨</div>
+            <h3>Diseño de Jardines</h3>
+            <p>Transformamos tu espacio en un jardín de ensueño. Diseño personalizado con plantas, piedras y elementos decorativos.</p>
+            <ul class="service-features">
+              <li>✓ Diseño personalizado</li>
+              <li>✓ Selección de plantas</li>
+              <li>✓ Elementos decorativos</li>
+              <li>✓ Asesoría continua</li>
+            </ul>
+            <div class="service-price">Desde <strong>$2,500 MXN</strong></div>
+            <button class="btn-service" onclick="abrirAgendar('Diseño de Jardines')" id="btn-diseno">Contratar</button>
+          </div>
+        </div>
+
+        <div class="service-card" id="svc-riego">
+          <div class="service-img-wrap">
+            <img src="C:\Users\j\.gemini\antigravity-ide\brain\72759f56-adfc-4687-9313-3ba7c78b6f74\irrigation_service_1780025132665.png"
+                 alt="Sistema de riego automático" />
+          </div>
+          <div class="service-body">
+            <div class="service-icon">💧</div>
+            <h3>Sistema de Riego</h3>
+            <p>Instalación de sistemas de riego automático eficientes para mantener tu jardín hidratado sin esfuerzo.</p>
+            <ul class="service-features">
+              <li>✓ Riego por goteo</li>
+              <li>✓ Aspersores automáticos</li>
+              <li>✓ Programación inteligente</li>
+              <li>✓ Ahorro de agua</li>
+            </ul>
+            <div class="service-price">Desde <strong>$1,800 MXN</strong></div>
+            <button class="btn-service" onclick="abrirAgendar('Sistema de Riego')" id="btn-riego">Contratar</button>
+          </div>
+        </div>
+
+        <div class="service-card" id="svc-fertilizacion">
+          <div class="service-img-wrap gradient-img gradient-green">
+            <div class="emoji-big">🌱</div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon">🌱</div>
+            <h3>Fertilización y Siembra</h3>
+            <p>Aplicación de fertilizantes orgánicos y siembra de nuevas plantas para revitalizar tu jardín.</p>
+            <ul class="service-features">
+              <li>✓ Fertilizantes orgánicos</li>
+              <li>✓ Siembra de césped</li>
+              <li>✓ Trasplante de plantas</li>
+              <li>✓ Control de plagas</li>
+            </ul>
+            <div class="service-price">Desde <strong>$499 MXN</strong></div>
+            <button class="btn-service" onclick="abrirAgendar('Fertilización y Siembra')" id="btn-fertilizacion">Contratar</button>
+          </div>
+        </div>
+
+        <div class="service-card" id="svc-limpieza">
+          <div class="service-img-wrap gradient-img gradient-amber">
+            <div class="emoji-big">🍂</div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon">🍂</div>
+            <h3>Limpieza Profunda</h3>
+            <p>Retiro de hojas, maleza y escombros. Dejamos tu jardín completamente limpio y listo para disfrutar.</p>
+            <ul class="service-features">
+              <li>✓ Retiro de hojas</li>
+              <li>✓ Eliminación de maleza</li>
+              <li>✓ Limpieza de caminos</li>
+              <li>✓ Retiro de escombros</li>
+            </ul>
+            <div class="service-price">Desde <strong>$350 MXN</strong></div>
+            <button class="btn-service" onclick="abrirAgendar('Limpieza Profunda')" id="btn-limpieza">Contratar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COTIZACIÓN ========== -->
+  <section id="cotizacion" class="section quote-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Precios transparentes</span>
+        <h2 class="section-title">Calcula tu <span class="accent">Cotización</span></h2>
+        <p class="section-sub">Obtén un precio estimado en segundos, sin compromisos</p>
+      </div>
+      <div class="quote-wrapper">
+        <div class="quote-form-card">
+          <h3>Calculadora de Precio</h3>
+          <div class="form-group">
+            <label for="q-servicio">Servicio</label>
+            <select id="q-servicio" onchange="calcularCotizacion()">
+              <option value="">— Selecciona un servicio —</option>
+              <option value="corte_jardin">Corte de Jardín</option>
+              <option value="corte_arboles">Corte de Árboles</option>
+              <option value="poda_setos">Poda de Setos</option>
+              <option value="diseno">Diseño de Jardines</option>
+              <option value="riego">Sistema de Riego</option>
+              <option value="fertilizacion">Fertilización y Siembra</option>
+              <option value="limpieza">Limpieza Profunda</option>
+              <option value="mantenimiento">Mantenimiento Mensual</option>
+            </select>
+          </div>
+          <div class="form-group" id="q-area-group">
+            <label for="q-area">Tamaño del área (m²)</label>
+            <div class="range-wrap">
+              <input type="range" id="q-area" min="20" max="1000" value="100" step="10" oninput="calcularCotizacion()" />
+              <span class="range-val" id="q-area-val">100 m²</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="q-frecuencia">Frecuencia</label>
+            <div class="radio-group">
+              <label class="radio-opt">
+                <input type="radio" name="freq" value="1" checked onchange="calcularCotizacion()" id="freq-once" /> Una vez
+              </label>
+              <label class="radio-opt">
+                <input type="radio" name="freq" value="0.9" onchange="calcularCotizacion()" id="freq-mensual" /> Mensual (-10%)
+              </label>
+              <label class="radio-opt">
+                <input type="radio" name="freq" value="0.8" onchange="calcularCotizacion()" id="freq-quincenal" /> Quincenal (-20%)
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Extras</label>
+            <div class="check-group">
+              <label class="check-opt">
+                <input type="checkbox" id="extra-retiro" onchange="calcularCotizacion()" /> Retiro de residuos (+$150)
+              </label>
+              <label class="check-opt">
+                <input type="checkbox" id="extra-urgente" onchange="calcularCotizacion()" /> Servicio urgente (+$200)
+              </label>
+              <label class="check-opt">
+                <input type="checkbox" id="extra-foto" onchange="calcularCotizacion()" /> Informe fotográfico (+$99)
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="quote-result-card" id="quote-result">
+          <div class="quote-no-service" id="quote-placeholder">
+            <div class="quote-icon">🌿</div>
+            <p>Selecciona un servicio para ver tu cotización</p>
+          </div>
+          <div class="quote-details" id="quote-details" style="display:none">
+            <div class="quote-header-detail">
+              <span class="quote-svc-name" id="r-svc-name">—</span>
+              <span class="quote-area" id="r-area">—</span>
+            </div>
+            <div class="quote-breakdown">
+              <div class="breakdown-row"><span>Precio base</span><span id="r-base">$0</span></div>
+              <div class="breakdown-row"><span>Descuento frecuencia</span><span id="r-desc" class="green">—</span></div>
+              <div class="breakdown-row" id="r-extras-row" style="display:none"><span>Extras</span><span id="r-extras">$0</span></div>
+              <div class="breakdown-row total"><span>Total estimado</span><span id="r-total">$0</span></div>
+            </div>
+            <p class="quote-note">* Precio estimado en MXN. El precio final puede variar según condiciones del terreno.</p>
+            <button class="btn-primary full-w" onclick="agendarDesdeQuote()" id="btn-quote-agendar">Agendar con esta cotización →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabla de precios -->
+      <div class="price-table-wrap">
+        <h3>Tabla de precios de referencia</h3>
+        <div class="price-table-scroll">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Servicio</th>
+                <th>Pequeño (&lt;100m²)</th>
+                <th>Mediano (100–300m²)</th>
+                <th>Grande (&gt;300m²)</th>
+                <th>Mensual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>🌿 Corte de jardín</td><td>$299</td><td>$499</td><td>$799+</td><td>$249/mes</td></tr>
+              <tr><td>🌳 Corte de árboles</td><td>$899</td><td>$1,499</td><td>$2,499+</td><td>—</td></tr>
+              <tr><td>✂️ Poda de setos</td><td>$399</td><td>$699</td><td>$999+</td><td>$349/mes</td></tr>
+              <tr><td>🎨 Diseño de jardines</td><td>$2,500</td><td>$4,500</td><td>$8,000+</td><td>—</td></tr>
+              <tr><td>💧 Sistema de riego</td><td>$1,800</td><td>$3,200</td><td>$5,500+</td><td>—</td></tr>
+              <tr><td>🌱 Fertilización</td><td>$499</td><td>$799</td><td>$1,299+</td><td>$399/mes</td></tr>
+              <tr><td>🍂 Limpieza profunda</td><td>$350</td><td>$599</td><td>$899+</td><td>$299/mes</td></tr>
+              <tr><td>🔄 Mantenimiento integral</td><td>$599</td><td>$999</td><td>$1,599+</td><td>$499/mes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ¿POR QUÉ NOSOTROS ========== -->
+  <section id="nosotros" class="section why-section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-text">
+          <span class="section-tag">¿Por qué elegirnos?</span>
+          <h2 class="section-title">Profesionales en <span class="accent">cada detalle</span></h2>
+          <p>En GreenCare Pro llevamos más de 10 años transformando jardines en espacios extraordinarios. Nuestro equipo certificado trabaja con pasión y precisión.</p>
+          <div class="why-features">
+            <div class="why-item">
+              <div class="why-icon">🛡️</div>
+              <div>
+                <strong>100% Garantizado</strong>
+                <p>Si no quedas satisfecho, regresamos sin costo adicional</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">⚡</div>
+              <div>
+                <strong>Respuesta Rápida</strong>
+                <p>Confirmamos tu cita en menos de 2 horas</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">🌿</div>
+              <div>
+                <strong>Eco-Friendly</strong>
+                <p>Usamos técnicas y productos respetuosos con el medio ambiente</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">📱</div>
+              <div>
+                <strong>Seguimiento Digital</strong>
+                <p>Recibe fotos y reportes del trabajo realizado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-image">
+          <div class="why-card-float">
+            <span class="why-card-num">4.9</span>
+            <span>★★★★★</span>
+            <span class="why-card-sub">Calificación promedio</span>
+          </div>
+          <div class="testimonials-mini">
+            <div class="mini-review">
+              <div class="mini-avatar">MR</div>
+              <div>
+                <strong>María R.</strong>
+                <p>"Excelente servicio, mi jardín quedó perfectamente podado. ¡Los recomiendo!"</p>
+                <span>★★★★★</span>
+              </div>
+            </div>
+            <div class="mini-review">
+              <div class="mini-avatar">JL</div>
+              <div>
+                <strong>José L.</strong>
+                <p>"Muy profesionales. Cortaron un árbol peligroso de forma segura y rápida."</p>
+                <span>★★★★★</span>
+              </div>
+            </div>
+            <div class="mini-review">
+              <div class="mini-avatar">AP</div>
+              <div>
+                <strong>Ana P.</strong>
+                <p>"El diseño de jardín superó mis expectativas. Totalmente recomendado."</p>
+                <span>★★★★★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AGENDAR CITA ========== -->
+  <section id="agendar" class="section booking-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fácil y rápido</span>
+        <h2 class="section-title">Agenda tu <span class="accent">Cita</span> a Domicilio</h2>
+        <p class="section-sub">Completa el formulario y nos ponemos en contacto contigo en minutos</p>
+      </div>
+      <div class="booking-wrapper">
+        <div class="booking-steps">
+          <div class="step active" id="step1-indicator">
+            <div class="step-num">1</div>
+            <span>Servicio</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step" id="step2-indicator">
+            <div class="step-num">2</div>
+            <span>Fecha y hora</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step" id="step3-indicator">
+            <div class="step-num">3</div>
+            <span>Tus datos</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step" id="step4-indicator">
+            <div class="step-num">4</div>
+            <span>Confirmación</span>
+          </div>
+        </div>
+
+        <form id="booking-form" class="booking-form" novalidate>
+
+          <!-- Paso 1: Servicio -->
+          <div class="form-step active" id="form-step-1">
+            <h3>¿Qué servicio necesitas?</h3>
+            <div class="service-selector">
+              <label class="svc-option" id="opt-corte-jardin">
+                <input type="radio" name="booking-service" value="Corte de Jardín" />
+                <span class="svc-opt-icon">🌿</span>
+                <span class="svc-opt-name">Corte de Jardín</span>
+                <span class="svc-opt-price">Desde $299</span>
+              </label>
+              <label class="svc-option" id="opt-corte-arboles">
+                <input type="radio" name="booking-service" value="Corte de Árboles" />
+                <span class="svc-opt-icon">🌳</span>
+                <span class="svc-opt-name">Corte de Árboles</span>
+                <span class="svc-opt-price">Desde $899</span>
+              </label>
+              <label class="svc-option" id="opt-poda-setos">
+                <input type="radio" name="booking-service" value="Poda de Setos" />
+                <span class="svc-opt-icon">✂️</span>
+                <span class="svc-opt-name">Poda de Setos</span>
+                <span class="svc-opt-price">Desde $399</span>
+              </label>
+              <label class="svc-option" id="opt-diseno">
+                <input type="radio" name="booking-service" value="Diseño de Jardines" />
+                <span class="svc-opt-icon">🎨</span>
+                <span class="svc-opt-name">Diseño de Jardines</span>
+                <span class="svc-opt-price">Desde $2,500</span>
+              </label>
+              <label class="svc-option" id="opt-riego">
+                <input type="radio" name="booking-service" value="Sistema de Riego" />
+                <span class="svc-opt-icon">💧</span>
+                <span class="svc-opt-name">Sistema de Riego</span>
+                <span class="svc-opt-price">Desde $1,800</span>
+              </label>
+              <label class="svc-option" id="opt-fertilizacion">
+                <input type="radio" name="booking-service" value="Fertilización y Siembra" />
+                <span class="svc-opt-icon">🌱</span>
+                <span class="svc-opt-name">Fertilización</span>
+                <span class="svc-opt-price">Desde $499</span>
+              </label>
+              <label class="svc-option" id="opt-limpieza">
+                <input type="radio" name="booking-service" value="Limpieza Profunda" />
+                <span class="svc-opt-icon">🍂</span>
+                <span class="svc-opt-name">Limpieza Profunda</span>
+                <span class="svc-opt-price">Desde $350</span>
+              </label>
+              <label class="svc-option" id="opt-mantenimiento">
+                <input type="radio" name="booking-service" value="Mantenimiento Integral" />
+                <span class="svc-opt-icon">🔄</span>
+                <span class="svc-opt-name">Mantenimiento</span>
+                <span class="svc-opt-price">Desde $599</span>
+              </label>
+            </div>
+            <div class="form-group" style="margin-top:1.5rem">
+              <label for="booking-area">Tamaño aproximado del área (m²)</label>
+              <input type="number" id="booking-area" placeholder="Ej: 150" min="1" />
+            </div>
+            <div class="form-group">
+              <label for="booking-notas">Notas adicionales</label>
+              <textarea id="booking-notas" rows="3" placeholder="Describe brevemente lo que necesitas..."></textarea>
+            </div>
+            <button type="button" class="btn-primary" onclick="nextStep(2)" id="btn-next-1">Siguiente →</button>
+          </div>
+
+          <!-- Paso 2: Fecha y Hora -->
+          <div class="form-step" id="form-step-2">
+            <h3>¿Cuándo te viene bien?</h3>
+            <div class="form-group">
+              <label for="booking-fecha">Fecha preferida</label>
+              <input type="date" id="booking-fecha" />
+            </div>
+            <div class="form-group">
+              <label>Horario preferido</label>
+              <div class="time-slots" id="time-slots">
+                <button type="button" class="time-slot" onclick="selectTime(this)" data-time="08:00–10:00" id="ts-0800">08:00 – 10:00</button>
+                <button type="button" class="time-slot" onclick="selectTime(this)" data-time="10:00–12:00" id="ts-1000">10:00 – 12:00</button>
+                <button type="button" class="time-slot" onclick="selectTime(this)" data-time="12:00–14:00" id="ts-1200">12:00 – 14:00</button>
+                <button type="button" class="time-slot" onclick="selectTime(this)" data-time="14:00–16:00" id="ts-1400">14:00 – 16:00</button>
+                <button type="button" class="time-slot" onclick="selectTime(this)" data-time="16:00–18:00" id="ts-1600">16:00 – 18:00</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="booking-urgencia">¿Es urgente?</label>
+              <select id="booking-urgencia">
+                <option value="normal">No, puedo esperar (precio normal)</option>
+                <option value="urgente">Sí, lo necesito esta semana (+$200)</option>
+                <option value="express">Express, hoy o mañana (+$400)</option>
+              </select>
+            </div>
+            <div class="step-buttons">
+              <button type="button" class="btn-outline" onclick="prevStep(1)" id="btn-prev-2">← Atrás</button>
+              <button type="button" class="btn-primary" onclick="nextStep(3)" id="btn-next-2">Siguiente →</button>
+            </div>
+          </div>
+
+          <!-- Paso 3: Datos del cliente -->
+          <div class="form-step" id="form-step-3">
+            <h3>Tus datos de contacto</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="booking-nombre">Nombre completo *</label>
+                <input type="text" id="booking-nombre" placeholder="Juan García" required />
+              </div>
+              <div class="form-group">
+                <label for="booking-tel">Teléfono *</label>
+                <input type="tel" id="booking-tel" placeholder="55 1234 5678" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="booking-email">Correo electrónico *</label>
+              <input type="email" id="booking-email" placeholder="correo@ejemplo.com" required />
+            </div>
+            <div class="form-group">
+              <label for="booking-direccion">Dirección del domicilio *</label>
+              <input type="text" id="booking-direccion" placeholder="Calle, número, colonia" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="booking-ciudad">Ciudad *</label>
+                <input type="text" id="booking-ciudad" placeholder="Ciudad de México" required />
+              </div>
+              <div class="form-group">
+                <label for="booking-cp">Código Postal *</label>
+                <input type="text" id="booking-cp" placeholder="06600" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="booking-referencias">Referencias del domicilio</label>
+              <input type="text" id="booking-referencias" placeholder="Entre calles, color de la fachada, etc." />
+            </div>
+            <div class="step-buttons">
+              <button type="button" class="btn-outline" onclick="prevStep(2)" id="btn-prev-3">← Atrás</button>
+              <button type="button" class="btn-primary" onclick="confirmarCita()" id="btn-confirmar">Confirmar Cita ✓</button>
+            </div>
+          </div>
+
+          <!-- Paso 4: Confirmación -->
+          <div class="form-step" id="form-step-4">
+            <div class="confirmation-box">
+              <div class="confirm-icon">✅</div>
+              <h3>¡Cita Agendada!</h3>
+              <p>Hemos recibido tu solicitud. En menos de 2 horas te contactaremos para confirmar los detalles.</p>
+              <div class="confirm-summary" id="confirm-summary"></div>
+              <div class="confirm-actions">
+                <button type="button" class="btn-primary" onclick="descargarComprobante()" id="btn-descargar">📄 Descargar Comprobante</button>
+                <button type="button" class="btn-outline" onclick="nuevaCita()" id="btn-nueva-cita">Nueva Cita</button>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Estamos aquí</span>
+        <h2 class="section-title">¿Tienes <span class="accent">preguntas</span>?</h2>
+        <p class="section-sub">Contáctanos por cualquiera de estos medios</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card" id="contact-whatsapp">
+          <div class="contact-icon green">📱</div>
+          <h4>WhatsApp</h4>
+          <p>Escríbenos y respondemos en minutos</p>
+          <a href="https://wa.me/5255000000" target="_blank" class="contact-link">+52 55 0000 0000</a>
+        </div>
+        <div class="contact-card" id="contact-email">
+          <div class="contact-icon blue">✉️</div>
+          <h4>Correo</h4>
+          <p>Para cotizaciones y consultas detalladas</p>
+          <a href="mailto:hola@greencarepro.mx" class="contact-link">hola@greencarepro.mx</a>
+        </div>
+        <div class="contact-card" id="contact-horario">
+          <div class="contact-icon amber">🕐</div>
+          <h4>Horario de atención</h4>
+          <p>Lunes a Sábado</p>
+          <strong class="contact-link">07:00 – 18:00 hrs</strong>
+        </div>
+        <div class="contact-card" id="contact-zona">
+          <div class="contact-icon purple">📍</div>
+          <h4>Zonas de servicio</h4>
+          <p>CDMX, Edomex y Querétaro</p>
+          <span class="contact-link">Cobertura en expansión</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">🌿</span>
+          <strong>GreenCare Pro</strong>
+          <p>Transformamos jardines, creamos espacios para vivir.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook" id="social-fb">📘</a>
+            <a href="#" aria-label="Instagram" id="social-ig">📸</a>
+            <a href="#" aria-label="WhatsApp" id="social-wa">💬</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="#servicios">Corte de Jardín</a></li>
+            <li><a href="#servicios">Corte de Árboles</a></li>
+            <li><a href="#servicios">Diseño de Jardines</a></li>
+            <li><a href="#servicios">Sistema de Riego</a></li>
+            <li><a href="#servicios">Fertilización</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Empresa</h5>
+          <ul>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#cotizacion">Cotización</a></li>
+            <li><a href="#agendar">Agendar Cita</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h5>Recibe consejos de jardinería</h5>
+          <p>Suscríbete y recibe tips exclusivos</p>
+          <div class="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="tu@correo.com" />
+            <button onclick="suscribir()" id="btn-newsletter">→</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 GreenCare Pro · Todos los derechos reservados</p>
+        <p>Hecho con 💚 para jardines hermosos</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MODAL AGENDAR ========== -->
+  <div id="modal-overlay" class="modal-overlay" onclick="cerrarModal(event)">
+    <div class="modal-card">
+      <button class="modal-close" onclick="cerrarModalBtn()" id="modal-close-btn">✕</button>
+      <h3>Agendar servicio de <span id="modal-svc-title"></span></h3>
+      <p>Serás redirigido al formulario de agendamiento con el servicio preseleccionado.</p>
+      <button class="btn-primary" onclick="irAFormulario()" id="modal-ir-btn">Ir al formulario →</button>
+    </div>
+  </div>
+
+  <!-- ========== TOAST ========== -->
+  <div id="toast" class="toast"></div>
+
+  <!-- ========== WHATSAPP FLOAT ========== -->
+  <a href="https://wa.me/5255000000" target="_blank" class="wa-float" id="wa-float" aria-label="WhatsApp">
+    💬
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
